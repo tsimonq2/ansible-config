@@ -1,0 +1,6 @@
+ - hosts: localhost
+   become: true
+   vars:
+     myusername: tsimonq2
+     myhome: /home/tsimonq2
+     hostname: semantic
