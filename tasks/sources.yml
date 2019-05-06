@@ -1,0 +1,10 @@
+- name: Setup the sources.list
+  file:
+      src: files/sources.list
+      dest: /etc/apt/sources.list
+      owner: root
+      group: root
+      mode: 0700
+
+- name: Add the GPG key for the Yubikey PPA
+  shell: apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 43D5C49532CBA1A9

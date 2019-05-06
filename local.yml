@@ -4,3 +4,6 @@
      myusername: tsimonq2
      myhome: /home/tsimonq2
      hostname: semantic
+   tasks:
+     # Add a basic sources.list file with the PPAs
+     - include: tasks/sources.yml
