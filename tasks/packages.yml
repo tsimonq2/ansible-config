@@ -1,0 +1,86 @@
+- name: Install development packages
+  apt:
+    name: "{{ packages }}"
+  vars:
+    packages:
+      # https://wiki.ubuntu.com/SimpleSbuild
+      - sbuild
+      - debhelper
+      - ubuntu-dev-tools
+      - piuparts
+      - apt-cacher-ng
+      - moreutils
+      # General tools
+      - build-essential
+      - pkg-kde-tools
+      - check-all-the-things
+      - autopkgtest
+      - git
+      - bzr
+      - python3-launchpadlib
+      - software-properties-common
+
+- name: Install a desktop environment
+  apt:
+    name: "{{ packages }}"
+  vars:
+    packages:
+     - openbox
+     - lubuntu-artwork
+     - sddm-theme-lubuntu
+     - sddm
+     - pcmanfm-qt
+     - lxqt-core
+     - lxqt-about
+     - lxqt-admin
+     - lxqt-openssh-askpass
+     - lxqt-powermanagement
+     - lxqt-sudo
+     - lxqt-notificationd
+     - xscreensaver
+     - pinentry-qt
+     - obconf-qt
+     - network-manager
+     - nm-tray
+     - bluedevil
+     - pulseaudio-module-bluetooth
+     - papirus-icon-theme
+     - arc-theme
+     - desktop-file-utils
+     - xdg-user-dirs
+     - gvfs-fuse
+     - gvfs-backends
+     - ttf-ubuntu-font-family
+
+- name: Install standard working tools
+  apt:
+    name: "{{ packages }}"
+  vars:
+    packages:
+      - standard^
+      - firefox
+      - thunderbird
+      - telegram-desktop
+      - gobby
+      - vim
+      - featherpad
+      - kcalc
+      - libreoffice
+      - qtcreator
+      - vlc
+      - htop
+      - pavucontrol-qt
+      - partitionmanager
+      - kdeconnect
+      - neofetch
+      - ssh
+      - tmux
+      - virt-manager
+      - zsync
+      - pastebinit
+      - hplip
+      - cups
+      - cups-bsd
+      - cups-client
+      - ubuntu-drivers-common
+      - memtest86+
