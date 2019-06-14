@@ -90,6 +90,11 @@
       - opensc
       - apt-file
 
+- name: Remove packages
+  command: "apt -y purge {{ item }}"
+  with_items:
+    - postfix
+
 - name: Install snaps
   command: "snap install {{ item }}"
   with_items:
