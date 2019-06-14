@@ -84,6 +84,7 @@
       - cups-client
       - ubuntu-drivers-common
       - memtest86+
+      - snapd
 
 - name: Install snaps
   command: "snap install {{ item }}"
