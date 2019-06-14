@@ -90,4 +90,8 @@
   command: "snap install {{ item }}"
   with_items:
     - lxd
+
+- name: Install classic snaps
+  command: "snap install --classic {{ item }}"
+  with_items:
     - git-ubuntu
