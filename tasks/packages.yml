@@ -86,6 +86,8 @@
       - memtest86+
       - snapd
       - seafile-gui
+      - opensc
+      - apt-file
 
 - name: Install snaps
   command: "snap install {{ item }}"
