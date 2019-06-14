@@ -85,6 +85,7 @@
       - ubuntu-drivers-common
       - memtest86+
       - snapd
+      - seafile-gui
 
 - name: Install snaps
   command: "snap install {{ item }}"
