@@ -5,8 +5,5 @@
      myhome: /home/tsimonq2
      hostname: semantic
    tasks:
-     # Add a basic sources.list file with the PPAs
-     - include: tasks/sources.yml
-
      # Bootstrap the packages needed on the system
      - include: tasks/packages.yml

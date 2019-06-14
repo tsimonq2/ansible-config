@@ -1,7 +1,0 @@
-- name: Setup the sources.list
-  file:
-      src: files/sources.list
-      dest: /etc/apt/sources.list
-      owner: root
-      group: root
-      mode: 0700
