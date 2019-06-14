@@ -19,6 +19,7 @@
       - bzr
       - python3-launchpadlib
       - software-properties-common
+      - meson
 
 - name: Install a desktop environment
   apt:
