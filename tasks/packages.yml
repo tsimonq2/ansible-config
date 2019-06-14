@@ -57,7 +57,7 @@
     name: "{{ packages }}"
   vars:
     packages:
-      - standard^
+      - ubuntu-standard 
       - firefox
       - thunderbird
       - telegram-desktop
