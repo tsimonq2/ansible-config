@@ -20,6 +20,7 @@
       - python3-launchpadlib
       - software-properties-common
       - meson
+      - arcanist
 
 - name: Install a desktop environment
   apt:
@@ -89,6 +90,7 @@
       - seafile-gui
       - opensc
       - apt-file
+      - kde-spectacle
 
 - name: Remove packages
   command: "apt -y purge {{ item }}"
