@@ -91,6 +91,7 @@
       - opensc
       - apt-file
       - kde-spectacle
+      - inkscape
 
 - name: Remove packages
   command: "apt -y purge {{ item }}"
