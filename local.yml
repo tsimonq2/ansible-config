@@ -5,5 +5,7 @@
      myhome: /home/tsimonq2
      hostname: semantic
    tasks:
+     # Add the Element repositories
+     - include: tasks/repos.yml
      # Bootstrap the packages needed on the system
      - include: tasks/packages.yml

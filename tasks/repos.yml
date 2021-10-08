@@ -1,0 +1,9 @@
+- name: Add Element APT signing Keys
+  apt_key:
+    url: https://packages.riot.im/debian/riot-im-archive-keyring.gpg
+    state: present
+
+- name: Add Element Repository
+  apt_repository:
+    repo: deb https://packages.riot.im/debian/ default main
+    state: present
