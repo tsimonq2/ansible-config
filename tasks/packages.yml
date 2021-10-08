@@ -19,7 +19,6 @@
       - bzr
       - python3-launchpadlib
       - software-properties-common
-      - meson
       - arcanist
 
 - name: Install a desktop environment
@@ -27,32 +26,7 @@
     name: "{{ packages }}"
   vars:
     packages:
-     - openbox
-     - lubuntu-artwork
-     - sddm-theme-lubuntu
-     - sddm
-     - pcmanfm-qt
-     - lxqt-core
-     - lxqt-about
-     - lxqt-admin
-     - lxqt-openssh-askpass
-     - lxqt-powermanagement
-     - lxqt-sudo
-     - lxqt-notificationd
-     - xscreensaver
-     - pinentry-qt
-     - obconf-qt
-     - network-manager
-     - nm-tray
-     - bluedevil
-     - pulseaudio-module-bluetooth
-     - papirus-icon-theme
-     - arc-theme
-     - desktop-file-utils
-     - xdg-user-dirs
-     - gvfs-fuse
-     - gvfs-backends
-     - ttf-ubuntu-font-family
+      - lubuntu-desktop
 
 - name: Install standard working tools
   apt:
@@ -63,12 +37,10 @@
       - firefox
       - thunderbird
       - telegram-desktop
-      - gobby
       - vim
       - featherpad
       - kcalc
       - libreoffice
-      - qtcreator
       - vlc
       - htop
       - pavucontrol-qt
@@ -84,13 +56,11 @@
       - cups
       - cups-bsd
       - cups-client
-      - ubuntu-drivers-common
-      - memtest86+
       - snapd
-      - seafile-gui
-      - opensc
       - apt-file
       - kde-spectacle
+      - inkscape
+      - kate
 
 - name: Remove packages
   command: "apt -y purge {{ item }}"
@@ -101,8 +71,4 @@
   command: "snap install {{ item }}"
   with_items:
     - lxd
-
-- name: Install classic snaps
-  command: "snap install --classic {{ item }}"
-  with_items:
-    - git-ubuntu
+    - 
