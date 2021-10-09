@@ -61,6 +61,7 @@
       - kde-spectacle
       - inkscape
       - kate
+      - element-nightly
 
 - name: Remove packages
   command: "apt -y purge {{ item }}"
