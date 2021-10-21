@@ -13,7 +13,6 @@
       # General tools
       - build-essential
       - pkg-kde-tools
-      - check-all-the-things
       - autopkgtest
       - git
       - bzr
@@ -34,14 +33,11 @@
   vars:
     packages:
       - ubuntu-standard 
-      - firefox
-      - thunderbird
       - telegram-desktop
       - vim
       - featherpad
       - kcalc
       - libreoffice
-      - vlc
       - htop
       - pavucontrol-qt
       - partitionmanager
@@ -72,4 +68,6 @@
   command: "snap install {{ item }}"
   with_items:
     - lxd
-    - 
+    - firefox
+    - thunderbird
+    - vlc
